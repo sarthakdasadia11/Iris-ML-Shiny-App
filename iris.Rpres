@@ -1,0 +1,64 @@
+Machine Learning with Iris Dataset
+========================================================
+author: Sarthak Dasadia
+date: August 17,2016
+autosize: true
+
+
+========================================================
+
+## Iris Data Set
+
+- The Iris flower data set or Fisher's Iris data set is a multivariate data set introduced by Ronald Fisher in his 1936 paper.
+
+- The data set consists of 150 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). Four features were measured from each sample: the length and the width of the sepals and petals, in centimetres. 
+
+<img src="a.png" height="300px" width="300px">
+<img src="b.png" height="300px" width="250px">
+<img src="c.png" height="300px" width="400px">
+
+========================================================
+## Dataset
+
+- Let's have a quick look ar the dataset.
+
+```{r}
+data(iris)
+head(iris)
+
+```
+
+- As you can see we have 4 features to predict the species.
+
+
+========================================================
+
+## Machine Learning with Iris Dataset
+
+- In this application, we will use two methods to predict the type of species of the iris flower. 
+
+i. Random Forest Method
+
+- Random forests are operate by constructing a multitude of decision trees at training time and outputting the class that is the mode of the classes (classification) or mean prediction (regression) of the individual trees. 
+
+- Reference: https://en.wikipedia.org/wiki/Random_forest
+
+ii. Decision Tree Method
+
+- A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility. It is one way to display an algorithm.
+
+- Reference: https://en.wikipedia.org/wiki/Decision_tree
+
+========================================================
+
+## Results
+
+-  Both methods show pretty accurate results. The Random Forest method is more accurate than the Decesion Tree method. 
+
+i. Random Forest
+
+It predicted most of all the test data accurately with >98% accuracy.
+
+ii. Decision Tree
+
+The accuracy ranges between 90% - 95%.
